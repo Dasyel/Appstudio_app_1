@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wordfinder</string>
+    <string name="action_settings">Settings</string>
+    <string name="formtitle">Fill this form and I will find words for you!</string>
+    <string name="formletters">Available Letters</string>
+    <string name="formwildcards">Number of Jokers</string>
+    <string name="formsize">Max word length</string>
+    <string name="formenglish">English</string>
+    <string name="formdutch">Nederlands</string>
+    <string name="formlanguage">Language</string>
+    <string name="formapplybutton">Find Words</string>
+    <string name="title_activity_show_wordlist">Word List</string>
+</resources>

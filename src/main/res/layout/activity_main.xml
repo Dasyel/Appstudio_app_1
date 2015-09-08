@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formtitle"
+                android:textSize="10pt">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditTextLetters"
+                android:layout_height="wrap_content"
+                android:hint="@string/formletters"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditTextWildcards"
+                android:layout_height="wrap_content"
+                android:hint="@string/formwildcards"
+                android:inputType="number"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditTextSize"
+                android:layout_height="wrap_content"
+                android:hint="@string/formsize"
+                android:inputType="number"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <Spinner
+                android:id="@+id/SpinnerLanguage"
+                android:layout_height="wrap_content"
+                android:prompt="@string/formlanguage"
+                android:layout_width="fill_parent"
+                android:entries="@array/formLanguagelist">
+            </Spinner>
+
+            <Button
+                android:id="@+id/ButtonFindWords"
+                android:layout_height="wrap_content"
+                android:text="@string/formapplybutton"
+                android:onClick="findWords"
+                android:layout_width="fill_parent">
+            </Button>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarFindWords" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
